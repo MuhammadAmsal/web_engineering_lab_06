@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Table with Images</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            background: #f4f7fb;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #173b5e;
+            font-weight: 700;
+        }
+
+        .table {
+            background: #fff;
+            border-color: #d8e1ea;
+        }
+
+        .table thead th {
+            padding: 16px;
+            background: #173b5e;
+            color: #fff;
+            border-color: #365a78;
+        }
+
+        .table tbody td {
+            padding: 14px;
+            vertical-align: middle;
+        }
+
+        .img-thumbnail {
+            width: 120px;
+            height: 85px;
+            object-fit: cover;
+            border: 2px solid rgba(23, 59, 94, .15);
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .place-name {
+            color: #173b5e;
+            font-weight: 700;
+        }
+
+        @media (max-width: 576px) {
+            .img-thumbnail {
+                width: 85px;
+                height: 68px;
+            }
+
+            .table tbody td {
+                padding: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container py-5">
+        <h1 class="text-center mb-2">Famous Tourist Places in Pakistan</h1>
+        <p class="text-center text-secondary mb-4">
+            A colorful table created with HTML5 and Bootstrap 5
+        </p>
+
+        <div class="table-responsive shadow-sm rounded-3">
+            <table class="table table-bordered table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Tourist Place</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?auto=format&fit=crop&w=300&q=80"
+                                 alt="Faisal Mosque in Islamabad" class="img-thumbnail">
+                        </td>
+                        <td class="place-name">Faisal Mosque</td>
+                        <td>Located in Islamabad, Faisal Mosque is known for its striking modern architecture and beautiful setting near the Margalla Hills.</td>
+                    </tr>
+
+                    <tr class="table-success">
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=300&q=80"
+                                 alt="Badshahi Mosque in Lahore" class="img-thumbnail">
+                        </td>
+                        <td class="place-name">Badshahi Mosque</td>
+                        <td>A historic Mughal-era mosque in Lahore, admired for its grand courtyard and impressive architecture.</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=300&q=80"
+                                 alt="Hunza Valley mountain scenery" class="img-thumbnail">
+                        </td>
+                        <td class="place-name">Hunza Valley</td>
+                        <td>Hunza Valley in Gilgit-Baltistan is famous for its mountain scenery, clear rivers, and picturesque villages.</td>
+                    </tr>
+
+                    <tr class="table-danger">
+                        <td>
+                            <img src="https://plus.unsplash.com/premium_photo-1674409427334-0ae5280381ee?q=80&w=1239&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                 alt="Mountain lake in northern Pakistan" class="img-thumbnail">
+                        </td>
+                        <td class="place-name">Saif-ul-Malook Lake</td>
+                        <td>Located near Naran, this alpine lake is popular for its scenic mountain views and turquoise water.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
